@@ -26,6 +26,7 @@ app.use(cacheControl())
 app.use(router.routes())
 app.use(router.allowedMethods())
 
-app.listen(3000, () => {
-  console.log(`Cache-Tester Server app started on port 3000`)
+const port = process.env.PORT || 5000
+app.listen(port, () => {
+  console.log(`Cache-Tester Server app started on port ${port}`)
 })
