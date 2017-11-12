@@ -13,7 +13,7 @@ router.get(
   async (ctx, next) => {
     const routePath = ctx.params.routePath
     await next()
-    ctx.response.body = { number: Math.floor(Math.random() + 100) }
+    ctx.response.body = { number: Math.floor(Math.random() * 100) }
   },
   cacheControl({
     maxAge: 3600,
