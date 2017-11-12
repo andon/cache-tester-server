@@ -1,7 +1,8 @@
 {
   "name": "cache-tester-server",
   "version": "1.0.0",
-  "description": "Simple server app for creating responses with different cache directives.",
+  "description":
+    "Simple server app for creating responses with different cache directives.",
   "main": "index.js",
   "author": "Andon Sikavica <sikavica@gmail.com>",
   "license": "MIT",
@@ -18,5 +19,8 @@
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "engines": {
+    "node": "8.9.x"
   }
 }
